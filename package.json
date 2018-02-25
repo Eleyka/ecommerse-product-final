@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/melissayauri/ecommerse-product-final#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "nodemon": "^1.15.1"
   }
 }
