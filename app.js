@@ -24,6 +24,23 @@ app.get('/paysuccess', function(req, res){
     });
 });
 
+app.post('/charge', function(req, res){
+    var token = req.body.stripeToken;
+    var chargeAmount = req.body.chargeAmount;
+    var charge = stripe.charges.create({
+        amount: chargeAmount,
+        currency: "gbp",
+        source: token
+    },function(err, charge){
+        if(err & err.type ==="StripeCardError"){
+            console.log("your card was decliend");
+        }
+    });
+    console.log("your payment was successful")
+    res.redirect('/paysuccess')
+   
+});
+
 /*servidoor */
 
 app.listen(3000, function(){
