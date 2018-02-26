@@ -23,7 +23,19 @@
             <li> hee njjhg</li>
             <!-- "pk_test_cAXaaXXjYxU1O3z7UYR4fzHE" -->
         </ul>
-<!---->
+  <form action="/charge" method="post">
+            <script 
+            src="https://checkout.stripe.com/checkout.js"
+            class="stripe-button"
+            data-key="pk_test_FOYegZpRNFCv14NpdwZ3xASA"
+            data-amount="30"
+            data-name= "cute"
+            data-description="this is my cute this"
+            data-locale= "auto"
+            data-currency = "gbp"
+            ></script>
+            <input type="hidden" name="chargeAmount" value="3000">
+        </form>
     </div>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
