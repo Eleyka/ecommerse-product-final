@@ -2,7 +2,11 @@
   "name": "ecommerse-product-final",
   "version": "1.0.0",
   "description": "* **Track:** _Especialización Front-end_\r * **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_\r * **Unidad:** _Producto final_",
-  "main": "index.js",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,9 +21,5 @@
   "bugs": {
     "url": "https://github.com/melissayauri/ecommerse-product-final/issues"
   },
-  "homepage": "https://github.com/melissayauri/ecommerse-product-final#readme",
-  "dependencies": {
-    "express": "^4.16.2",
-    "handlebars": "^4.0.11"
-  }
+  "homepage": "https://github.com/melissayauri/ecommerse-product-final#readme"
 }

@@ -1,25 +1,61 @@
-# E-commerce
 
-* **Track:** _Especialización Front-end_
-* **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
-* **Unidad:** _Producto final_
+
+# SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
+
+**SPA multiusuario consumiendo data remota** s una aplicación web que cabe en una sola página. Todo su código (JS, HTML, CSS) se recupera con una sola carga de página. Y la navegación entre las páginas se realiza sin actualizar toda la página.
 
 ***
+## Plan de trabajo
 
-## Flujo de trabajo
+#### 1. Se realiza un `Fork` al repositorio original
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+```
+https://github.com/Laboratoria-learning/ecommerse-product-final
+```
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+#### 2.Planificación
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+Se planifico las actividades a desarrollar para es estudio y aplicación de las apis y nuevas tecnologías en dicho proyecto
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+#### 3. Recursos
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+##### 3.1. Angular
+es un potente marco de JavaScript para crear aplicaciones web dinámicas. 
+
+##### 3.2. Visual Studio Code
+Editor de código fuente.
+
+##### 3.3. Jquery
+Librería de JavaScript de código abierto que permite agregar interactividad y efectos visuales.
+
+##### 3.4. Bootstrap
+ Framework que permite facilitar el desarrollo.
+
+##### 3.5. Google Fonts
+Directorio interactivo que permite añadir tipografias a la web.
+
+
+***
+## Producto 
+
+![GIF](public/assets/images/img3.jpg)
+***
+![GIF](public/assets/images/img4.jpg)
+***
+![GIF](public/assets/images/img5.jpg)
+***
+![GIF](public/assets/images/img6.jpg)
+***
+![GIF](public/assets/images/img7.jpg)
+***
+![GIF](public/assets/images/img8.jpg)
+***
+![GIF](public/assets/images/img9.jpg)
+
+
+
+## Colaboradores
+
+* Melissa Yauri
+* Silvia Fuentes
+* Eleyne Ramírez
