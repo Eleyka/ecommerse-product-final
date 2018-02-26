@@ -9,6 +9,10 @@ $(document).ready(function() {
     window.location="http://127.0.0.1:3000"; 
   });
 
+/*   $( ".stripebuy" ).click(function() {
+    window.location="http://127.0.0.1:3000"; 
+  }); */
+
   /* evento para traer los articulos de compra*/
   send.click(function(event) {
     /* variable para los valores en el input*/
