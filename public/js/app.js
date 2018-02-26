@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   /* variable pata el input*/
   let search = $('#search');
   /* variable para el boton enviar*/
@@ -20,7 +21,7 @@ $(document).ready(function() {
   function getItems() {
     /* url del api mercado libre*/
     $.ajax({
-      url: `https://api.mercadolibre.com/sites/MLA/search?q=${searchItem}`,
+      url: `https://api.mercadolibre.com/sites/MPE/search?q=${searchItem}`,
       /* data:{
       id=123
     },
@@ -38,7 +39,13 @@ $(document).ready(function() {
           var title = result[i].title;
           console.log(title);
           /* data para el temlate handlebars*/
-          var html = handtemplate({title: result[i].title});
+          var html = handtemplate({
+            title: result[i].title, 
+            imagen : result[i].thumbnail,
+            precio: result[i].price,
+            plazo: result[i].installments.amount, 
+            cantidad: result[i].installments.quantity
+          });
           /* incorporandolo a la sección determinada*/
           $('#section-items').append(html);
         });
