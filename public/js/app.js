@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   /* variable pata el input*/
   let search = $('#search');
   /* variable para el boton enviar*/
@@ -24,9 +23,9 @@ $(document).ready(function() {
       url: `https://api.mercadolibre.com/sites/MPE/search?q=${searchItem}`,
       /* data:{
       id=123
-    },
-    type:'GET',
-    dataType:'json',*/
+    },*/
+      type: 'GET',
+      dataType: 'json',
       /* incorporando funcionalidad para traer los articulos*/
       success: function(response) {
         console.log('the page was loaded');
@@ -35,21 +34,24 @@ $(document).ready(function() {
         var result = response.results;
         /* recorrido en la data*/
         result.forEach(function(value, i) {
+          addPaypal();
           /* titulo del articulo*/
           var title = result[i].title;
           console.log(title);
           /* data para el temlate handlebars*/
           var html = handtemplate({
-            title: result[i].title, 
-            imagen : result[i].thumbnail,
+            title: result[i].title,
+            imagen: result[i].thumbnail,
             precio: result[i].price,
-            plazo: result[i].installments.amount, 
+            plazo: result[i].installments.amount,
             cantidad: result[i].installments.quantity
+
           });
           /* incorporandolo a la sección determinada*/
           $('#section-items').append(html);
         });
       },
+
       /* aviso de un error*/
       error: function(error) {
         console.log('la pagina no esta cargado', error);
@@ -58,6 +60,27 @@ $(document).ready(function() {
       complete: function(xhr, status) {
         console.log('la respuesta está completa');
       }
+    });
+  }
+
+  function addPaypal() {
+    paypal.minicart.render({
+      strings: {
+        button: 'Pagar',
+        buttonAlt: 'Total',
+        subtotal: 'Total:',
+        empty: 'No hay productos en el carrito'
+      }
+    });
+    // Eventos para agregar productos al carrito
+    $('.producto').click(function(event) {
+      event.stopPropagation();
+      paypal.minicart.cart.add({
+        business: 'brian meneses@gmail.com',
+        item_name: $(this).attr('titulo'),
+        amount: $(this).attr('precio'),
+        currency_code: 'PEN',
+      });
     });
   }
 });
