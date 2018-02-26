@@ -75,12 +75,13 @@ $(document).ready(function() {
     // Eventos para agregar productos al carrito
     $('.producto').click(function(event) {
       event.stopPropagation();
-      paypal.minicart.cart.add({
-        business: 'brian meneses@gmail.com',
-        item_name: $(this).attr('titulo'),
-        amount: $(this).attr('precio'),
-        currency_code: 'PEN',
-      });
+		    paypal.minicart.cart.add({
+			business: 'uhperezoscar@gmail.com', // Cuenta paypal para recibir el dinero
+			item_name: $(this).attr("titulo"),
+			 amount: $(this).attr("precio"),
+			 currency_code: 'USD',
+
+			});
     });
   }
 });
