@@ -4,9 +4,96 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Patua One', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+body{
+  background-color: #eeeeee;
+}
+.navbar-color{
+  background-color: #de4043;
+  border-color: #de4043;
+
+}
+.navbar-inverse .navbar-brand{
+  color: white;
 }
 
-img[alt="online"]{
-  width: 50vw;
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
 }
+.navbar-inverse .navbar-collapse{
+    border-color: #de4043;
+}
+
+img[alt="carusel"]{
+  width: 100%;
+  height: 40%;
+}
+img[alt="icon"]{
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+.carousel-caption h1{
+  color: #de4043;
+}
+.menu{
+  margin-top: 3rem;
+}
+.menu a{
+  text-decoration: none;
+  color: #de4043;
+  margin-right: 3rem;
+}
+.menu a:hover{
+  color: black;
+}
+.btn-send{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #de4043;
+  color: white;
+}
+.producto{
+  background-color: #de4043;
+  border-color: #de4043;
+}
+img[alt="item"]{
+  width: 80%;
+  height: 50%;
+  margin-bottom: 1rem;
+  border: 5px solid #de4043;
+}
+ul li{
+  list-style: none;
+  color: white;
+}
+a{
+  color: white;
+}
+.icons {
+  display: flex;
+}
+.icons li{
+  margin-left: 1rem;
+}
+.stripe{
+  background-color: #de4043;
+  color: white
+}
+@media (min-width: 992px){
+  img[alt="carusel"]{
+    width: 100%;
+    height: 60vh;
+  }
+  #carousel-example-generic {
+    height: 50%;
+  }
+  .item{
+    width: 100%;
+    height: 80vh;
+  }
+
+}
+
+carousel-example-generic

@@ -27,17 +27,17 @@ app.config(function($routeProvider) {
 });
 
 app.controller('HomeController', function($scope) {
-  $scope.message = '¡Hola! tenemos todo lo que necesitas... HomeController';
+  $scope.message = 'Busca el artículo que desees';
 });
 
 app.controller('ModaController', function($scope) {
-  $scope.message = '¡Hola! tenemos todo lo que necesitas... ModaController';
+  $scope.message = 'Tenemos todo lo que necesitas en moda';
 });
 
 app.controller('TecnnologiaController', function($scope) {
-  $scope.message = '¡Hola! tenemos todo lo que necesitas... TecnnologiaController';
+  $scope.message = 'Tenemos todo lo que necesitas en tecnología';
 });
 
 app.controller('ArteController', function($scope) {
-  $scope.message = '¡Hola! tenemos todo lo que necesitas... ArteController';
+  $scope.message = 'Tenemos todo lo que necesitas en artículos';
 });

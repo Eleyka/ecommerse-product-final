@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.carousel').carousel()
   /* variable pata el input*/
   let search = $('#search');
   /* variable para el boton enviar*/
@@ -6,11 +7,11 @@ $(document).ready(function() {
   let searchItem ;
 
   $( ".comprame" ).click(function() {
-    window.location="http://127.0.0.1:3000"; 
+    window.location="http://127.0.0.1:3000";
   });
 
 /*   $( ".stripebuy" ).click(function() {
-    window.location="http://127.0.0.1:3000"; 
+    window.location="http://127.0.0.1:3000";
   }); */
 
   /* evento para traer los articulos de compra*/
@@ -42,7 +43,6 @@ $(document).ready(function() {
         var result = response.results;
         /* recorrido en la data*/
         result.forEach(function(value, i) {
-          addPaypal();
           /* titulo del articulo*/
           var title = result[i].title;
           console.log(title);
@@ -56,7 +56,8 @@ $(document).ready(function() {
 
           });
           /* incorporandolo a la sección determinada*/
-          $('#section-items').append(html);
+          $('#section-items').prepend(html);
+          addPaypal();
         });
       },
 
@@ -83,13 +84,12 @@ $(document).ready(function() {
     // Eventos para agregar productos al carrito
     $('.producto').click(function(event) {
       event.stopPropagation();
-		    paypal.minicart.cart.add({
-			business: 'uhperezoscar@gmail.com', // Cuenta paypal para recibir el dinero
-			item_name: $(this).attr("titulo"),
-			 amount: $(this).attr("precio"),
-			 currency_code: 'USD',
-
-			});
+      paypal.minicart.cart.add({
+        business: 'uhperezoscar@gmail.com', // Cuenta paypal para recibir el dinero
+        item_name: $(this).attr("titulo"),
+   			 amount: $(this).attr("precio"),
+   			 currency_code: 'PEN',
+       });
     });
   }
 });
