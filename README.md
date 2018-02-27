@@ -52,7 +52,8 @@ Plugin de jQuery que integra de forma rápida un carro de compras con Paypal.
    ![GIF](public/assets/images/layaout1.PNG)
 
   - Mobile
-    ![GIF](public/assets/images/layaout2.PNG)
+
+    ![GIF](public/assets/images/layaout7.PNG)
 
 * Busqueda de los articulos
   - Vista HOME
