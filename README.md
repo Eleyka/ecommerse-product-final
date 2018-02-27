@@ -72,6 +72,7 @@ Plugin de jQuery que integra de forma rápida un carro de compras con Paypal.
    ![GIF](public/assets/images/layaout6.PNG)
 
  - Vista moda
+
    ![GIF](public/assets/images/moda.PNG)
 * Interacción con el api Stripe
 
